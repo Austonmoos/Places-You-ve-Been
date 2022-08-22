@@ -1,3 +1,4 @@
+// business
 function Places() {
   this.destinations = {};
   this.currentId = 0;
@@ -25,7 +26,7 @@ function Destination (destinationName, location, timeOfYear) {
   this.timeOfYear = timeOfYear
 }
 
-
+// mock database
 let places = new Places();
 let destination0 = new Destination("cancun");
 let destination1 = new Destination("california");
@@ -33,3 +34,13 @@ places.addDestination(destination0);
 places.addDestination(destination1);
 destination0.id;
 destination1.id;
+
+// UI
+function handleClick() {
+  
+}
+
+
+window.addEventListener("click", function() {
+  this.document.querySelector("linkToDisplay").addEventListener("click", handleClick);
+});
