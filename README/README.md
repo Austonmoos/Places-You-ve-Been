@@ -34,9 +34,16 @@ function Destination (destinationName) {
 }
 output: "destinationName"
 
-Describe: 
-It should find the destination id and return false if empty
-
+Describe: findDestination ()
+Test: It should find the destination id and return false if empty
+Code: 
+Places.prototype.findDestination = function(id) {
+  if (this.destinations[id] !== undefined) {
+    return this.destinations[id];
+  }
+  return false;
+};
+Output:id of selected input
 
 
 <!-- UI -->
