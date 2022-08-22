@@ -41,6 +41,16 @@ function handleClick() {
 }
 
 
-window.addEventListener("click", function() {
+function list(){
+  const ulElement = document.createElement("ul");
+  const liOne = document.createElement("li");
+  const liTwo = document.createElement("li");
+  liOne.append(destination0);
+  liTwo.append(destination1);
+}
+
+element.addEventListener("click", function() {
   this.document.querySelector("linkToDisplay").addEventListener("click", handleClick);
+
 });
+
